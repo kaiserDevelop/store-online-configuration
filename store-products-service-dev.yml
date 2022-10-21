@@ -1,10 +1,24 @@
 products:
   property: Products Profile Dev
 
+server:
+  port: 0
+
 spring:
+  application:
+    name: products-service
   jpa:
     hibernate:
       dll:
         auto: update
     show-sql: true
     generate-ddl: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/storeOnline
+    username: bridgetDBA2022
+    password: bridget92
+
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uui}
