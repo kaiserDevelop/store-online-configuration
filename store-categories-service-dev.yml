@@ -1,2 +1,17 @@
 categories:
   property: Categories Profile Dev
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://milo:F1d3l109$@cluster0.x7dml.mongodb.net/mongotraining?retryWrites=true&w=majority
+
+  application:
+    name: categories-service
+
+server:
+  port: 0
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uui}
