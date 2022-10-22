@@ -17,4 +17,4 @@ eureka:
     instance-id: ${spring.application.name}:${random.uui}
 
 app:
-  testProp: Test propertie updated
+  testProp: Test propertie updated and adding more text
