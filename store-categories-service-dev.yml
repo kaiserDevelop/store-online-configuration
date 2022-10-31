@@ -1,7 +1,5 @@
 categories:
   property: Categories Profile Dev
-
-
   application:
     name: categories-service
 
