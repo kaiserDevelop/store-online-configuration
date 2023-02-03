@@ -1,12 +1,9 @@
-categories:
-  property: Categories Profile Dev
-  application:
-    name: categories-service
-
 server:
   port: 0
 
 spring:
+  application:
+    name: categories-service
   data:
     mongodb:
       uri: mongodb+srv://milo:F1d3l109@cluster0.x7dml.mongodb.net/mongotraining?retryWrites=true&w=majority
