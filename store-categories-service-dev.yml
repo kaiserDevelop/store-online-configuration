@@ -6,6 +6,11 @@ categories:
 server:
   port: 0
 
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://milo:F1d3l109@cluster0.x7dml.mongodb.net/mongotraining?retryWrites=true&w=majority
+
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.uui}
