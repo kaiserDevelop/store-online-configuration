@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: store_discovery_server
+    hostname: localhost
   # standalone mode
   client:
     registerWithEureka: false
