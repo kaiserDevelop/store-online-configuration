@@ -7,18 +7,13 @@ server:
 spring:
   application:
     name: products-service
-  jpa:
-    hibernate:
-      dll:
-        auto: update
-    show-sql: true
-    generate-ddl: true
-  datasource:
-    url: jdbc:mysql://localhost:3306/storeOnline
-    username: bridgetDBA2022
-    password: bridget92
+  data:
+    mongodb:
+      uri: mongodb+srv://milo:F1d3l109@cluster0.x7dml.mongodb.net/mongotraining?retryWrites=true&w=majority
 
+  eureka:
+    instance:
+      instance-id: ${spring.application.name}:${random.uui}
 
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.uui}
+  app:
+    testProp: Test propertie updated and adding more text
